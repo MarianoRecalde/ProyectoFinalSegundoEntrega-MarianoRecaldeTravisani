@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#cuerpo {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+    background-color: rgb(78, 6, 6);
+}
+
+header {
+    background-color: black;
+    padding-left: 3px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+header nav {
+    margin: 10px;
+
+    /* position: absolute; */
+    /* top: 0;
+    right: 0; */
+}
+
+header nav li {
+    font-family: 'Oswald', sans-serif;
+    color-scheme: white;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+header img {
+    margin-left: 3px;
+    margin-top: 3px;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    margin-right: 50px;
+
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+}
+
+.imagen img {
+    height: 40px;
+    margin-right: 0px;
+}
+
+/* .cuerpo{
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(78, 6, 6);
+} */
+
+.nombre-empresa {
+    font-family: 'Oswald', sans-serif;
+    color: white
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.imagen h2 {
+    margin-left: 20px;
+}
+
+
+
+.descuento {
+    color: white;
+    background-color: black;
+}
+
+.parrafo {
+    color: white;
+    background-color: black;
+}
+
+
+
+.carta {
+    width: 300px;
+    background-color: rgb(170, 168, 168);
+    margin-top: 40px;
+    padding: 0px;
+    margin-left: 60%;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.carta_imagen {
+    width: 295px;
+    right: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.carta_doble {
+    font-size: 25px;
+    /* margin-bottom: 0px;
+    margin-top: 0px; */
+
+}
+
+.carta_boton {
+    font-size: 20px;
+    right: 300px;
+    /* margin-bottom: 100px; */
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #f1e8e8;
+    background-color: rgb(129, 138, 49);
+
+}
+
+/* MAIN */
+
+main {
+
+    text-align: center;
+    position: relative;
+}
+
+.mundo_gamer {
+    font-family: 'Oswald', sans-serif;
+    color: white
+}
+
+.fifa22 {
+    width: 600px;
+    position: absolute;
+    left: 100px;
+    border-radius: 5px;
+
+}
+
+.friday {
+    width: 600px;
+    position: absolute;
+    left: 100px;
+    top: 970px;
+    border-radius: 5px;
+    /* margin-top: px; */
+}
+
+.nuestros_beneficios {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.contenedor{
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
+    /* padding: 1rem; */
+    width: 100%;
+    
+}
+                                        /* /transicion/ */
+.caja{
+    border: solid 1px;
+    width: 100px;
+    height: 60px;
+    background: rgb(161,20,20);
+    background: linear-gradient(90deg, rgba(161,20,20,1) 22%, rgba(97,29,90,1) 65%);
+    display: grid;
+    place-items: center;
+    transition: all 1.5s;
+    transition-timing-function: ease-out;
+}
+
+.caja:hover{
+    width: 100%;
+    background-color:rgb(46, 134, 168);
+}
+                                        /* /transicion/ */
+
+.caja{
+    animation-name: caja;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    
+}
+
+@keyframes caja {
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+/* contacto */
+
+/* .registro{
+    width: 400px;
+    background-color:  rgb(206, 144, 103);
+    padding: 54px;
+    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+   
+} */
+
+                                /* contacto */                  
+.main_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 144, 103);
+    width: 400px;
+    padding: 30px;
+
+}
+
+.contactarse {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+
+}
+
+.control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.boton {
+    /* text-align: center; */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+}
+
+.ppp {
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px){
+   .fifa22{
+    width: 300px;
+    position: absolute;
+    left:20px;
+    border-radius: 5px;
+    height: 200px;
+   }
+   .friday{
+   width: 300px;
+   position: absolute;
+   left: 20px;
+   top: 830px;
+   border-radius: 5px;
+}
+.carta{
+    width: 200px;
+    background-color: rgb(170, 168, 168);
+    margin-top: 40px;
+    padding: 0px;
+    margin-left: 60%;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.carta_imagen {
+    width: 200px;
+    right: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.carta_juegos{
+    font-size: 1.5rem;
+}
+.carta_doble{
+    font-size: 1.2rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+                                /* productos */
+.productos_de_nuestra_página{
+    background-color: black;
+    color: white;
+}
+
+.producto_gamer{
+    background-color: black;
+    color: white;
+}
+
+.boton {
+    font-size: 20px;
+    right: 300px;
+    /* margin-bottom: 100px; */
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #f1e8e8;
+    background-color: rgb(60, 45, 145);
+
+}
+
+
+.tarjetitas{
+width: 300px;
+background-color:white;
+margin-bottom: 0px;
+padding: 0px;
+margin-right:1000px;
+border-radius: 5px;
+display: inline-block;
+}
+
+.silla{
+    width: 100%;
+    right: 600px;
+    margin-bottom: 100px;
+    margin-bottom: 10px;
+}
+
+
+.tarjetitas{
+    transition: transform 1s;
+}
+
+.tarjetitas:hover{
+    transform: scale(1.1);translate: 40px;
+
+}
+
+@media screen and (max-width: 480px){
+   .imagengamer{
+    width: 300px;
+ 
+    height: 300px;
+    width: 350px;
+   }
+ 
+}
+
+                                /* ofertas */
+
+.oferta_oferta{
+    background-color: black;
+    color: white;
+}
+
+.nuestros_productos{
+    background-color: black;
+    color: white;
+}
+
+
+.armar_tu_pc_gamer{
+    background-color: black;
+    color: white;
+}
+
+.componentes{
+    background-color: black;
+    color: white; 
+}
